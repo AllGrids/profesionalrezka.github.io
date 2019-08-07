@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* Proffirezka Services Page Styleshhet */
+
+table {
+	border-collapse: collapse;
+	border: 2px solid #696969;
+}
+td {
+	border: 2px solid #696969;
+} 
+th {
+	border: 2px solid #d17d00;
+	border-bottom: 3px dashed #d17d00;
+}
+
+.price-list {
+	position: relative;
+	display: grid;
+	grid-template-columns: 34% 34% 34%;
+	padding: 70px 35px;
+}
+.price-list h2 {
+	position: absolute;
+	left: 35px;
+	top: 10px;
+}
+
+.service-card {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+	border-radius: 15px;
+	margin: 25px 25px 0 0;
+}
+.service-card div {
+	position: relative;
+}
+.service-card div:last-child {
+	padding: 20px;
+}
+.service-card img {
+	position: relative;
+	bottom: 1px;
+	width: 100%;
+	border-radius: 13px 13px 0 0;
+	filter: brightness(40%);
+}
+.service-card h3 {
+	position: absolute;
+	bottom: 0;
+	left: 15px;
+	color: #FFFFFF;
+}
+.service-card:hover {
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+.card-button {
+	padding: 5px 10px;
+	margin-left: -9px;
+}
+
+.price {
+	color: #595959;
+	font-size: 16pt;
+}
+
+/* Media Queries */
+@media (max-width: 615px) {
+	/* Phones */
+	.price-list {
+		grid-template-columns: 52% 52%;
+	}
+}
+@media (max-width: 445px) {
+	/* Small phones */
+	.price-list {
+		grid-template-columns: 107%;
+	}
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Портфолио</title>
+		<link href="styles/common.css" rel="stylesheet" type="text/css">
+		<link href="styles/portfolio.css" rel="stylesheet" type="text/css">
+        <!-- TODO: Add shortcut icon -->
+		<link rel="shortcut icon" href="#">
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<script src="js/portfolio.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div>
+				<a href="#Главная">Главная</a>
+				<a href="#Контакты">Контакты</a>
+			</div>
+			<h1>Proffirezka</h1>
+			<div>
+				<a class="chosen" href="#Портфолио">Портфолио</a>
+				<a href="#Услуги">Услуги</a>
+			</div>
+			<!-- Nav is used for mobile menu -->
+			<nav>
+				<a href="#Главная">Главная</a>
+				<hr>
+				<a href="#Контакты">Контакты</a>
+				<hr>
+				<a class="chosen" href="#Портфолио">Портфолио</a>
+				<hr>
+				<a href="#Услуги">Услуги</a>
+			</nav>
+			<button class="none" id="menu-click"><i class="material-icons">arrow_forward_ios</i></button>
+		</header>
+
+		<!-- Main content -->
+		<section class="works">
+            <h3>Галерея наших работ</h3>
+            <!-- This section will be filled by JS -->
+            <div class="gallery-image">
+                <i id="back" class="material-icons">arrow_forward_ios</i>
+				<i id="forward" class="material-icons">arrow_forward_ios</i>
+				<img class="showed" src="images/portfolio-image1.jpg" alt="Ошибка">
+				<p class="caption">Вывеска с подсветкой из акрила для сети магазинов 'Магнит' на Уральской улице.</p>
+				<p class="date">7 Июля 2019</p>
+            </div>
+            <div class="gallery">
+                <noscript>
+                    <p>Включите отображение JavaScript или смените браузер, чтобы отобразить портфолио полностью.</p>
+                </noscript>
+            </div>
+		</section>
+
+		<footer>
+			<p>&copy; Proffirezka. ИП Сандов Алексей Юрьевич. 2019</p>
+			<p>Сайт находится в состоянии разработки. Создан AllGrids Studio</p>
+		</footer>
+	</body>
+
+</html>

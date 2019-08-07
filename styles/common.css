@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* Proffirezka Main Stylesheet with common styles*/
+
+/* Google Fonts - Roboto, Arbutus Slab, Roboto Slab, Montserrat and Material Icons */
+@import url('https://fonts.googleapis.com/css?family=Roboto|Arbutus+Slab|Material+Icons|Montserrat|Roboto+Slab&display=swap&subset=cyrillic-ext');
+
+body {
+	margin: 0;
+	background-color: #DFDFDF;
+}
+
+a {
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+	transition: opacity 0.3s;
+}
+
+a:hover {
+	opacity: 0.6;
+}
+
+p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+}
+
+h2 {
+	font-family: 'Roboto Slab', serif;
+	color: #EF6C00;
+}
+
+h3 {
+	font-family: 'Roboto Slab', serif;
+	font-size: 19pt;
+	color: #EF6C00;
+	letter-spacing: 1.5px;
+}
+
+h4 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 12.5pt;
+	color: #EF6C00;
+}
+
+section {
+	margin: 10px;
+	padding: 10px 35px;
+	background-color: #FFFFFF;
+	border-top: 3px solid #EF6C00;
+	border-bottom: 3px solid #EF6C00;
+}
+
+article {
+	border-top: 3px solid #EF6C00;
+	border-bottom: 3px solid #EF6C00;
+	background: #FFFFFF;
+}
+
+i {
+	padding: 10px;
+	color: #FFFFFF;
+	border-radius: 25%;
+	cursor: pointer;
+	user-select: none;
+	transition: background-color 0.6s ease, color 0.6s ease;
+}
+i:first-child {
+	transform: rotate(180deg);
+	float: left;
+	left: 20px;
+}
+i:last-child {
+	float: right;
+	right: 20px;
+}
+i:hover {
+	background-color: rgba(144, 72, 1, 0.80);
+	cursor: pointer;
+}
+
+header {
+	height: 5em;
+	padding: 0 2%;
+	text-align: center;
+	background-color: #FFFFFF;
+	border-bottom: 3px solid #EF6C00;
+}
+header h1 {
+	display: inline-block;
+	font-family: 'Arbutus Slab', serif;
+	font-size: 27pt;
+	color: #EB7300;
+}
+header div {
+	display: inline-block;
+	padding: 35px;
+}
+header div a:first-child::after {
+	content: '|';
+	margin: 25px;
+	color: #ff8d1c;
+	user-select: none;
+}
+header a {
+	position: relative;
+	bottom: 5px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 14pt;
+	color: #000000;
+	text-decoration: none;
+}
+
+#menu-click {
+	display: none;
+	position: relative;
+	margin: -5px auto auto auto;
+	border: none;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	cursor: pointer;
+	user-select: none;
+}
+#menu-click i {
+	transform: rotate(90deg) scale(0.7);
+	color: #000000;
+}
+#menu-click i:hover {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+nav {
+	display: block;
+	padding: 30px;
+	margin: 20px 0 5px 0;
+}
+/* Button Animation */
+.down {
+	animation: rotateDown 1s 1 forwards;
+}
+
+.up {
+	animation: rotateUp 1s 1 forwards;
+}
+@keyframes rotateDown {
+	from {
+		transform: rotate(0deg);
+	}
+
+	to {
+		transform: rotate(180deg);
+	}
+}
+@keyframes rotateUp {
+	from {
+		transform: rotate(180deg);
+	}
+
+	to {
+		transform: rotate(0deg);
+	}
+}
+
+.chosen {
+	color: #FF8000;
+	pointer-events: none;
+}
+.chosen:hover {
+	opacity: 1;
+}
+
+.card-button {
+	display: inline-block;
+	background-color: #FFFFFF;
+	border: none;
+	border-radius: 100px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	font-size: 15pt;
+	color: #EB7300;
+	transition: background-color 0.8s ease, color 0.5s ease;
+}
+.card-button:hover {
+	background-color: #EB7300;
+	color: #FFFFFF;
+	opacity: 1;
+}
+
+.social {
+	list-style-type: none;
+	margin-left: -30px;
+}
+.social li:first-child::before {
+	content: url(../images/instagram-logo.png);
+	margin-right: 15px;
+}
+.social li a {
+	position: relative;
+	bottom: 10px;
+	font-size: 14pt;
+	text-decoration: none;
+}
+.social li:last-child::before {
+	content: url(../images/vk-logo.png);
+	margin-right: 15px;
+}
+
+footer p {
+	position: relative;
+	display: inline-block;
+	margin: 15px;
+	padding: 15px;
+	font-family: 'Roboto', sans-serif;
+	color: #6c6c6c;
+}
+footer p:last-child {
+	position: absolute;
+	right: 15px;
+}
+footer a {
+	color: #424242;
+}
+
+/* Media Queries */
+
+@media (min-width: 615px) {
+	/* Special query for clients with disabled JS */
+	nav {
+		display: none;
+	}
+}
+@media (max-width: 1180px) {
+	/* Medium Laptops */
+	footer p {
+		display: block;
+	}
+
+	footer p:last-child {
+		position: inherit;
+	}
+}
+@media (max-width: 950px) {
+	/* Small Laptops */
+	
+}
+@media (max-width: 825px) {
+	/* Tablets */
+	header div {
+		padding: 15px;
+	}
+	header div a:first-child::after {
+		margin: 20px;
+	}
+}
+@media (max-width: 768px) {
+	/* Medium Tablets */
+}
+@media (max-width: 720px) {
+	/* Small Tablets */
+	header div {
+		padding: 5px;
+	}
+	header div a:first-child::after {
+		margin: 5px;
+	}
+}
+@media (max-width: 615px) {
+	/* Large Phones */
+	header {
+		height: auto;
+	}
+	header div {
+		display: none;
+	}
+	header h1 {
+		margin-bottom: 0;
+	}
+	#menu-click {
+		display: block;
+	}
+	.price-list {
+		grid-template-columns: 52% 52%;
+	}
+}

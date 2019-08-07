@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Услуги</title>
+        <link href="styles/common.css" rel="stylesheet" type="text/css">
+        <link href="styles/services.css" rel="stylesheet" type="text/css">
+        <link rel="shortcut icon" href="#">
+        <script src="js/jquery-3.4.1.min.js"></script>
+        <script src="js/common.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <div>
+                <a href="#Главная">Главная</a>
+                <a href="#Контакты">Контакты</a>
+            </div>
+            <h1>Proffirezka</h1>
+            <div>
+                <a href="#Портфолио">Портфолио</a>
+                <a class="chosen" href="#Услуги">Услуги</a>
+            </div>
+            <!-- Nav is used for mobile menu -->
+            <nav>
+                <a href="#Главная">Главная</a>
+                <hr>
+                <a href="#Контакты">Контакты</a>
+                <hr>
+                <a href="#Портфолио">Портфолио</a>
+                <hr>
+                <a class="chosen" href="#Услуги">Услуги</a>
+            </nav>
+            <button class="none" id="menu-click"><i class="material-icons">arrow_forward_ios</i></button>
+        </header>
+        <!-- Services Description-->
+        <section class="service">
+            <h2>Наша работа</h2>
+            <p>
+                Мы создаём внешнюю рекламу: вывески, стойки, объёмные пластиковые буквы и т.п. Работа осуществляется на плоттерном, фрезеровочном
+                и лазерном станках. Делаем короба различных форм и размеров, изготовленные из цветного алюма-композита
+                или квадра-профиля, с инкрустированным текстом из акрилового стекла, либо с накладными буквами из прозрачного
+                орг-стекла с лазерной обработкой, по заказу добавляем внутреннюю подсветку с люминесцентными лампами
+                или светодиодами повышенной яркости. Также, в дополнительный перечень услуг входит брендирование автомобилей,
+                создание светодиодных панелей, светодиодных стендов и сувенирной продукции на заказ. Работаем с файлами 2D
+                форматов .EPS, .DXF, .PLT, .CDR и с 3D: .STL, .3DA , .3DP, .3DS , .DXF.
+            </p>
+            <p>
+                Для того, чтобы узнать стоимость материала для изготовления заказа, перейдите в наш инструмент расчёта:
+            </p>
+            <a href="#open-tool" class="card-button">Открыть инструмент расчёта</a>
+            <!-- Modal counting tool -->
+            <div id="open-tool" class="counting-tool">
+                <div>
+                    <a href="#" title="Закрыть"><i class="material-icons">close</i></a>
+                    <h3>Расчёт стоимости материала</h3>
+                    <p>Выберите тип материалы и введите размеры:</p>
+                    <noscript>
+                        Чтобы использовать инструмент расчёта, включите JavaScript или перейдите
+                        в другой браузер!
+                    </noscript>
+                    <form name="salesform">
+                        <table>
+                            <colgroup>
+                                <col span="2"></col>
+                                <col></col>
+                            </colgroup>    
+                            <thead>
+                                <tr>
+                                    <th>Материал</th>
+                                    <th>Размеры в метрах</th>
+                                    <th>Цена за метр</th>
+                                    <th>Стоимость</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <select name="material0">
+                                            <option value=0>Выбрать:</option>
+                                            <option value=20>Фрезерная резка акрил 0.5-1мм</option>
+                                            <option value=25>Фрезерная резка акрил 2мм</option>
+                                            <option value=30>Фрезерная резка акрил 3мм</option>
+                                            <option value=35>Фрезерная резка акрил 4мм</option>
+                                            <option value=50>Фрезерная резка акрил 5мм</option>
+                                            <option value=55>Фрезерная резка акрил 6мм</option>
+                                            <option value=70>Фрезерная резка акрил 8мм</option>
+                                            <option value=90>Фрезерная резка акрил 10мм</option>
+                                            <option value=180>Фрезерная резка акрил 20мм</option>
+                                            <option value=30>Фрезерная выборка акрила шир.3мм</option>
+                                            <option value=35>Фрезерная выборка акрила шир.4мм</option>
+                                            <option value=25>Фрезерная резка ПВХ 2мм</option>
+                                            <option value=30>Фрезерная резка ПВХ 3мм</option>
+                                            <option value=30>Фрезерная резка ПВХ 4мм</option>
+                                            <option value=35>Фрезерная резка ПВХ 5мм</option>
+                                            <option value=35>Фрезерная резка ПВХ 6мм</option>
+                                            <option value=45>Фрезерная резка ПВХ 8мм</option>
+                                            <option value=50>Фрезерная резка ПВХ 10мм</option>
+                                            <option value=55>Фрезерная резка мдф,дерево,фанера 6мм</option>
+                                            <option value=60>Фрезерная резка мдф,дерево,фанера 8мм</option>
+                                            <option value=80>Фрезерная резка мдф,дерево,фанера 10мм</option>
+                                            <option value=95>Фрезерная резка мдф,дерево,фанера 12мм</option>
+                                            <option value=120>Фрезерная резка мдф,дерево,фанера 16мм</option>
+                                            <option value=150>Фрезерная резка мдф,дерево,фанера 19мм</option>
+                                            <option value=70>Фрезерная резка алюминиевого композита 3мм</option>
+                                            <option value=80>Фрезерная резка алюминиевого композита 4мм</option>
+                                            <option value=35>Фрезерная резка полистирола 3мм</option>
+                                            <option value=40>Фрезерная резка полистирола 4мм</option>
+                                            <option value=25>Фрезерная резка монолитного поликарбоната 2мм</option>
+                                            <option value=30>Фрезерная резка монолитного поликарбоната 3мм</option>
+                                            <option value=320>Фрезерная гравировка 2D 1 дм2</option>
+                                            <option value=480>Фрезерная гравировка 3D 1 дм2</option>
+                                            <option>лазерная резка:</option>
+                                            <option value=25>Лазерная резка акрил 2мм</option>
+                                            <option value=30>Лазерная резка акрил 3мм</option>
+                                            <option value=40>Лазерная резка акрил 4мм</option>
+                                            <option value=55>Лазерная резка акрил 5мм</option>
+                                            <option value=70>Лазерная резка акрил 6мм</option>
+                                            <option value=85>Лазерная резка акрил 8мм</option>
+                                            <option value=95>Лазерная резка акрил 10мм</option>
+                                            <option value=25>Лазерная резка PET 0.5-0,7мм "трафареты"</option>
+                                            <option value=18>Лазерная резка картона 4мм</option>
+                                            <option value=200>Лазерная гравировка 1 дм2</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="values0" value="0.0" size="2" maxlength="5">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="rate0" size="6" readonly style="border:0">
+                                    </td>
+                                    <td>
+                                        <input type="text" name="price0" size="6" readonly style="border:0">
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td>
+                                        <button><i class="material-icons">plus</i>Добавить материал</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <input type="button" value="Рассчитать" onclick="checkList()">
+                                    </td>
+                                    <td>
+                                        <strong>Итого:</strong>
+                                    </td>
+                                    <td>
+                                        <input type="text" name="tot" value="" readonly style="border:0">
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- Services list -->
+        <!-- TODO: Make dynamic price-list -->
+        <section class="price-list">
+            <h2>Прайс-лист</h2>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+            <article class="service-card">
+                <div>
+                    <img src="images/services-building1.jpg" alt="Ошибка">
+                    <h3>Создание вывески</h3>
+                </div>
+                <div>
+                    <p>
+                        Вырезка и полная сборка любой вывески с ваших макетов.
+                        Затраченный материал будет включен в стоимость.
+                    </p>
+                    <p class="price">от 1200₽</p>
+                    <a class="card-button" href="#Контакты">Заказать</a>
+                </div>
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; Proffirezka. ИП Сандов Алексей Юрьевич. 2019</p>
+            <p>Сайт находится в состоянии разрботки. Создан AllGrids Studio.</p>
+        </footer>
+    </body>
+</html>
