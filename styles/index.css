@@ -17,14 +17,14 @@ body {
 	text-align: center;
 	border: none;
 }
-.banner i {
+.banner b {
 	position: relative;
-	top: 40px;
+	top: 20px;
 }
 .banner .card-button {
 	position: relative;
-	top: 90px;
-	padding: 10px 45px;
+	top: 70px;
+	padding: 8px 35px;
 }
 .banner h2 {
 	color: #FFFFFF;
@@ -33,7 +33,7 @@ body {
 	letter-spacing: 3px;
 }
 .banner div:first-child {
-	margin: -75px 0 75px 0;
+	margin: -85px 0 105px 0;
 	text-align: center;
 	user-select: none;
 }
@@ -126,7 +126,7 @@ article iframe {
 
 /* Media Queries */
 
-@media (max-width: 1169px) {
+@media (max-width: 1170px) {
 	/* Small Laptops */
 	article iframe {
 		width: 100%;
@@ -171,7 +171,17 @@ article iframe {
 }
 @media (max-width: 490px) {
 	/* Phones */
-	.banner i {
+	.content {
+		margin: 0;
+	}
+	.content article {
+		margin: 0 0 10px 0;
+	}
+
+	.banner {
+		height: 130px;
+	}
+	.banner b {
 		top: 20px;
 	}
 	.banner h2 {
@@ -180,7 +190,7 @@ article iframe {
 	}
 	.banner .card-button {
 		top: 65px;
-		padding: 15px 45px;
+		padding: 10px 45px;
 	}
 	.banner div:first-child {
 		margin: -65px 0 65px 0;
@@ -195,8 +205,12 @@ article iframe {
 }
 @media (max-width: 410px) {
 	/* Small Phones */
+	
 	.banner h2 {
 		font-size: 18pt;
 		letter-spacing: 1px;
+	}
+	.banner b {
+		top: 10px;
 	}
 }

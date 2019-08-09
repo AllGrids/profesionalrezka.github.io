@@ -2,7 +2,7 @@
 /* Proffirezka Main Stylesheet with common styles*/
 
 /* Google Fonts - Roboto, Arbutus Slab, Roboto Slab, Montserrat and Material Icons */
-@import url('https://fonts.googleapis.com/css?family=Roboto|Arbutus+Slab|Material+Icons|Montserrat|Roboto+Slab&display=swap&subset=cyrillic-ext');
+@import url("https://fonts.googleapis.com/css?family=Roboto|Arbutus+Slab|Material+Icons|Montserrat|Roboto+Slab&display=swap&subset=cyrillic-ext");
 
 body {
 	margin: 0;
@@ -57,24 +57,27 @@ article {
 	background: #FFFFFF;
 }
 
-i {
-	padding: 10px;
+b {
+	position: relative;
 	color: #FFFFFF;
 	border-radius: 25%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25pt;
 	cursor: pointer;
 	user-select: none;
 	transition: background-color 0.6s ease, color 0.6s ease;
 }
-i:first-child {
-	transform: rotate(180deg);
+#prev {
+	padding: 1px 18px 5px 15px;
 	float: left;
 	left: 20px;
 }
-i:last-child {
+#next {
+	padding: 1px 15px 5px 18px;
 	float: right;
 	right: 20px;
 }
-i:hover {
+b:hover {
 	background-color: rgba(144, 72, 1, 0.80);
 	cursor: pointer;
 }
@@ -85,12 +88,17 @@ header {
 	text-align: center;
 	background-color: #FFFFFF;
 	border-bottom: 3px solid #EF6C00;
+	user-select: none;
+	-ms-user-select: none;
 }
 header h1 {
 	display: inline-block;
-	font-family: 'Arbutus Slab', serif;
+	font-family: 'Arbutus Slab';
 	font-size: 27pt;
+	font-weight: bolder;
+	font-style: normal;
 	color: #EB7300;
+	cursor: default;
 }
 header div {
 	display: inline-block;
@@ -100,7 +108,6 @@ header div a:first-child::after {
 	content: '|';
 	margin: 25px;
 	color: #ff8d1c;
-	user-select: none;
 }
 header a {
 	position: relative;
@@ -115,15 +122,14 @@ header a {
 	display: none;
 	position: relative;
 	margin: -5px auto auto auto;
+	font-size: 20pt;
 	border: none;
 	outline: none;
 	background-color: rgba(0, 0, 0, 0);
 	cursor: pointer;
 	user-select: none;
-}
-#menu-click i {
-	transform: rotate(90deg) scale(0.7);
-	color: #000000;
+	transform: rotate(270deg);
+	color: #EF6C00;
 }
 #menu-click i:hover {
 	background-color: rgba(0, 0, 0, 0);
@@ -132,7 +138,13 @@ header a {
 nav {
 	display: block;
 	padding: 30px;
-	margin: 20px 0 5px 0;
+	margin: 50px 0 5px 0;
+}
+nav hr {
+	border: none;
+    color: #EB7300; 
+    background-color: #EB7300; 
+    height: 1px;
 }
 /* Button Animation */
 .down {
@@ -144,20 +156,20 @@ nav {
 }
 @keyframes rotateDown {
 	from {
-		transform: rotate(0deg);
+		transform: rotate(270deg);
 	}
 
 	to {
-		transform: rotate(180deg);
+		transform: rotate(90deg);
 	}
 }
 @keyframes rotateUp {
 	from {
-		transform: rotate(180deg);
+		transform: rotate(90deg);
 	}
 
 	to {
-		transform: rotate(0deg);
+		transform: rotate(270deg);
 	}
 }
 
