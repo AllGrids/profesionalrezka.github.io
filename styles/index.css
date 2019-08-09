@@ -161,7 +161,7 @@ article iframe {
 	}
 	article img {
 		display: block;
-		max-width: 100%;
+		max-width: 150%;
 		width: 100%;
 		height: auto;
 	}
@@ -171,6 +171,10 @@ article iframe {
 }
 @media (max-width: 490px) {
 	/* Phones */
+	h3 {
+		letter-spacing: 0;
+	}
+
 	.content {
 		margin: 0;
 	}
@@ -182,20 +186,27 @@ article iframe {
 		height: 130px;
 	}
 	.banner b {
-		top: 20px;
+		top: 10px;
+		font-size: 22pt;
 	}
 	.banner h2 {
-		font-size: 20pt;
+		font-size: 15pt;
 		letter-spacing: 2px;
 	}
 	.banner .card-button {
-		top: 65px;
+		top: 95px;
 		padding: 10px 45px;
 	}
 	.banner div:first-child {
 		margin: -65px 0 65px 0;
 	}
 
+	article img {
+		position: relative;
+		margin-left: -10%;
+		width: 119.5%;
+		height: auto;
+	}
 	article figure {
 		margin: -50px 0 5px 0;
 	}
@@ -205,11 +216,6 @@ article iframe {
 }
 @media (max-width: 410px) {
 	/* Small Phones */
-	
-	.banner h2 {
-		font-size: 18pt;
-		letter-spacing: 1px;
-	}
 	.banner b {
 		top: 10px;
 	}
